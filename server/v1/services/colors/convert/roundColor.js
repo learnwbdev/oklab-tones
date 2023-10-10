@@ -25,5 +25,7 @@ export function roundColor(colorOrg, colorSpace, {isRound = true, mpPrcLnRgb = 5
         colorSpace === colorSpaces.Oklab      ? roundColorOklab(colorOrg, {mpPrcL: mpPrcL, mpPrcAb: mpPrcAb}) :
         colorSpace === colorSpaces.sRgb       ? roundColorSRgb(colorOrg,  {mpPrcSRgb: mpPrcSRgb}) :
         colorSpace === colorSpaces.linSRgb    ? roundColorLnRgb(colorOrg, {mpPrcLnRgb: mpPrcLnRgb}) :
+        colorSpace === colorSpaces.Lch        ? roundColorOklch(colorOrg, {mpPrcL: mpPrcL, mpPrcC: mpPrcC, mpPrcH: mpPrcH}) :
+        colorSpace === colorSpaces.Lab        ? roundColorOklab(colorOrg, {mpPrcL: mpPrcL, mpPrcAb: mpPrcAb}) :
         colorOrg; // for other color spaces - no rounding
 }
