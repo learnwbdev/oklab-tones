@@ -11,6 +11,8 @@
  * @param {number} [mpPrcH = 2] as 0..17 (integer)  - precision for Hue in Oklch color (digit after decimal point to round Hue)
  * @param {number} [mpPrcAb = 5] as 0..17 (integer) - precision for *a and *b in Oklab (digit after decimal point to round *a, *b)
  * @param {number} [mpPrcSRgb = 0] as 0..17 (integer) - precision for r, g, b in sRGB color (red, green and blue color components)
+ * @param {number} [mpPrcDspP3 = 4] as 0..17 (integer) - precision for r, g, b in Display P3 RGB color (red, green and blue color components)
+ * @param {boolean} [isSimpleCalcCam16 = true] - flag to use default Viewing conditions (to not recalculate parameters) and to not calculate all values for CAM16 color
  * @return {number[] | string | undefined[]} converted color in colorSpaceTo
  */
 
@@ -30,6 +32,8 @@ export function convertColor(
     mpPrcH = 2,
     mpPrcAb = 5,
     mpPrcSRgb = 0,
+    mpPrcDspP3 = 4,
+    isSimpleCalcCam16 = true,
   } = {}
 ) {
   // return original color if color space From and To are the same
@@ -66,6 +70,7 @@ export function convertColor(
     mpPrcH: mpPrcH,
     mpPrcAb: mpPrcAb,
     mpPrcSRgb: mpPrcSRgb,
+    mpPrcDspP3: mpPrcDspP3,
   });
 
   return curColor;
