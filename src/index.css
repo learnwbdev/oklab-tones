@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Playfair:wght@300;400;500;700&family=Open+Sans:wght@400;500&family=Source+Code+Pro:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  font-family: 'Playfair', serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
