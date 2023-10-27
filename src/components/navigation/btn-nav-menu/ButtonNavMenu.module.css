@@ -1,0 +1,14 @@
+.btn {
+  z-index: 10;
+}
+
+.nav__icon_close, .nav__icon_menu {
+  stroke-linecap: round;
+  stroke: rgb(var(--clr-rgb-on-surf));
+  width: 44%;
+  height: 44%;
+}
+
+.nav__icon_close {
+  stroke: rgb(var(--clr-rgb-prim));
+}
