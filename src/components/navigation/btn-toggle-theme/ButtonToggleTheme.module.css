@@ -1,0 +1,13 @@
+.moon, .sun {
+    stroke-linecap: round;
+    stroke: rgb(var(--clr-rgb-on-surf));
+    fill: inherit;
+    width: 63%;
+    height: 63%;
+}
+
+.moon {
+    transform: rotate(10deg);
+    width: 60%;
+    height: 60%;
+}
