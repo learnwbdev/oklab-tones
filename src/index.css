@@ -6,6 +6,139 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Primary colors, RGB */
+  --clr-rgb-p-10: 30 0 96;
+  --clr-rgb-p-20: 44 33 120;
+  --clr-rgb-p-30: 63 59 145;
+  --clr-rgb-p-40: 84 85 171;
+  --clr-rgb-p-80: 187 195 255;
+  --clr-rgb-p-90: 220 225 255;
+  --clr-rgb-p-99: 251 252 255;
+  /* Secondary colors, RGB */
+  --clr-rgb-s-10: 24 26 44;
+  --clr-rgb-s-20: 45 47 66;
+  --clr-rgb-s-30: 67 70 89;
+  --clr-rgb-s-40: 90 93 114;
+  --clr-rgb-s-80: 193 197 221;
+  --clr-rgb-s-90: 221 225 249;
+  --clr-rgb-s-99: 251 252 255;
+  /* Tertiary colors, RGB */
+  --clr-rgb-t-10: 44 18 42;
+  --clr-rgb-t-20: 67 39 64;
+  --clr-rgb-t-30: 91 61 87;
+  --clr-rgb-t-40: 116 84 112;
+  --clr-rgb-t-80: 226 187 220;
+  --clr-rgb-t-90: 255 214 248;
+  --clr-rgb-t-99: 255 251 254;
+  /* Error colors, RGB */
+  --clr-rgb-e-10: 65 0 2;
+  --clr-rgb-e-20: 105 0 6;
+  --clr-rgb-e-30: 147 0 12;
+  --clr-rgb-e-40: 186 25 28;
+  --clr-rgb-e-80: 255 180 170;
+  --clr-rgb-e-90: 255 218 213;
+  --clr-rgb-e-99: 255 251 251;
+
+  /* Neutral colors, RGB */
+  --clr-rgb-n-4: 13 14 17;
+  --clr-rgb-n-6: 19 19 22;
+  --clr-rgb-n-10: 27 27 31;
+  --clr-rgb-n-12: 31 31 35;
+  --clr-rgb-n-17: 41 42 45;
+  --clr-rgb-n-22: 52 53 56;
+  --clr-rgb-n-24: 56 57 60;
+  --clr-rgb-n-87: 217 218 221;
+  --clr-rgb-n-90: 226 226 229;
+  --clr-rgb-n-92: 231 232 235;
+  --clr-rgb-n-94: 237 238 241;
+  --clr-rgb-n-96: 243 243 246;
+  --clr-rgb-n-98: 249 249 252;
+  --clr-rgb-n-99: 251 252 255;
+  /* Neutral Variant colors, RGB */
+  --clr-rgb-nv-30: 69 70 79;
+  --clr-rgb-nv-80: 196 198 208;
+
+  --clr-shadow-rgb: 0 0 0;
+
+  /* Surfaces Light Theme */
+  --clr-rgb-surf: var(--clr-rgb-n-98);
+  --clr-rgb-surf-dim: var(--clr-rgb-n-87);
+  --clr-rgb-surf-bright: var(--clr-rgb-n-98);
+  --clr-rgb-surf-cont-lowst: var(--clr-rgb-n-99);
+  --clr-rgb-surf-cont-low: var(--clr-rgb-n-96);
+  --clr-rgb-surf-cont: var(--clr-rgb-n-94);
+  --clr-rgb-surf-cont-high: var(--clr-rgb-n-92);
+  --clr-rgb-surf-cont-highst: var(--clr-rgb-n-90);
+  /* On Surfaces Light Theme */
+  --clr-rgb-on-surf: var(--clr-rgb-n-10);
+  --clr-rgb-on-surf-var: var(--clr-rgb-nv-30);
+  /* Outline Light Theme */
+  --clr-rgb-otl: var(--clr-rgb-nv-50);
+  --clr-rgb-otl-var: var(--clr-rgb-nv-80);
+
+  /* Primary Colors Light Theme */
+  --clr-rgb-prim: var(--clr-rgb-p-40);
+  --clr-rgb-prim-cont: var(--clr-rgb-p-90);
+  --clr-rgb-on-prim: var(--clr-rgb-p-99);
+  --clr-rgb-on-prim-cont: var(--clr-rgb-p-10);
+  /* Secondary Colors Light Theme */
+  --clr-rgb-secd: var(--clr-rgb-s-40);
+  --clr-rgb-secd-cont: var(--clr-rgb-s-90);
+  --clr-rgb-on-secd: var(--clr-rgb-s-99);
+  --clr-rgb-on-secd-cont: var(--clr-rgb-s-10);
+  /* Tertiary Colors Light Theme */
+  --clr-rgb-tert: var(--clr-rgb-t-40);
+  --clr-rgb-tert-cont: var(--clr-rgb-t-90);
+  --clr-rgb-on-tert: var(--clr-rgb-t-99);
+  --clr-rgb-on-tert-cont: var(--clr-rgb-t-10);
+  /* Error Colors Light Theme */
+  --clr-rgb-err: var(--clr-rgb-e-40);
+  --clr-rgb-err-cont: var(--clr-rgb-e-90);
+  --clr-rgb-on-err: var(--clr-rgb-e-99);
+  --clr-rgb-on-err-cont: var(--clr-rgb-e-10);
+}
+
+html.dark {
+  color-scheme: dark;
+  /* Surfaces Dark Theme */
+  --clr-rgb-surf: var(--clr-rgb-n-6);
+  --clr-rgb-surf-dim: var(--clr-rgb-n-6);
+  --clr-rgb-surf-bright: var(--clr-rgb-n-24);
+  --clr-rgb-surf-cont-lowst: var(--clr-rgb-n-4);
+  --clr-rgb-surf-cont-low: var(--clr-rgb-n-10);
+  --clr-rgb-surf-cont: var(--clr-rgb-n-12);
+  --clr-rgb-surf-cont-high: var(--clr-rgb-n-17);
+  --clr-rgb-surf-cont-highst: var(--clr-rgb-n-22);
+  /* On Surfaces Dark Theme*/
+  --clr-rgb-on-surf: var(--clr-rgb-n-90);
+  --clr-rgb-on-surf-var: var(--clr-rgb-nv-80);
+  /* Outline Dark Theme */
+  --clr-rgb-otl: var(--clr-rgb-nv-60);
+  --clr-rgb-otl-var: var(--clr-rgb-nv-30);
+
+  /* Primary Colors Dark Theme */
+  --clr-rgb-prim: var(--clr-rgb-p-80);
+  --clr-rgb-prim-cont: var(--clr-rgb-p-30);
+  --clr-rgb-on-prim: var(--clr-rgb-p-20);
+  --clr-rgb-on-prim-cont: var(--clr-rgb-p-90);
+  /* Secondary Colors Dark Theme */
+  --clr-rgb-secd: var(--clr-rgb-s-80);
+  --clr-rgb-secd-cont: var(--clr-rgb-s-30);
+  --clr-rgb-on-secd: var(--clr-rgb-s-20);
+  --clr-rgb-on-secd-cont: var(--clr-rgb-s-90);
+  /* Tertiary Colors Dark Theme */
+  --clr-rgb-tert: var(--clr-rgb-t-80);
+  --clr-rgb-tert-cont: var(--clr-rgb-t-30);
+  --clr-rgb-on-tert: var(--clr-rgb-t-20);
+  --clr-rgb-on-tert-cont: var(--clr-rgb-t-90);
+  /* Error Colors Dark Theme */
+  --clr-rgb-err: var(--clr-rgb-e-80);
+  --clr-rgb-err-cont: var(--clr-rgb-e-30);
+  --clr-rgb-on-err: var(--clr-rgb-e-20);
+  --clr-rgb-on-err-cont: var(--clr-rgb-e-90);
+}
+
 html {
   color-scheme: light;
   font-family: 'Playfair', serif;
