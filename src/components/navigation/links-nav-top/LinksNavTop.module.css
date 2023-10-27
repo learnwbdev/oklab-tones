@@ -1,0 +1,21 @@
+.nav_links {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .nav_links {
+    flex-direction: row;
+  }
+}
+
+.nav_links a {
+  color: rgb(var(--clr-rgb-on-surf));
+  font-weight: 700;
+  font-size: 1.0625rem;
+
+  &:hover {
+    color: rgb(var(--clr-rgb-prim));
+  }
+}
