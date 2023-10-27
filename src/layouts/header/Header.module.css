@@ -1,0 +1,19 @@
+.header_pghome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    line-height: 1.2;
+    color: rgb(var(--clr-rgb-prim));
+    font-family: 'Playfair Display', serif;
+}
+
+.header_pghome > h1 {
+  font-weight: bold;
+}
+
+.header_minor {
+  font-size: 1.5rem;
+}
