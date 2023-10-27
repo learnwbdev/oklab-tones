@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(var(--clr-rgb-on-surf-var));
+    background-color: rgb(var(--clr-rgb-surf-cont-highst));
+}
+
+.author {
+    font-weight: 500;
+    font-size: 1rem;
+}
