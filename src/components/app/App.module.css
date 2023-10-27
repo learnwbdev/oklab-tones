@@ -1,0 +1,4 @@
+.app {
+    background-color: rgb(var(--clr-rgb-surf-cont-high));
+    width: 100vw;
+}
