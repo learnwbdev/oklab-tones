@@ -1,0 +1,59 @@
+.btn_round {
+    --size: 3rem;
+    --hover-bg: rgba(var(--clr-rgb-on-surf) / 0.07);
+
+    background: transparent;
+    border-radius: 999px;
+    border: none;
+    padding: 0;
+
+    width: var(--size);
+    height: var(--size);
+
+    cursor: pointer;
+    touch-action: manipulation;
+    outline-offset: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: transparent;
+
+    &:hover {
+        background-color: var(--hover-bg);
+        fill: rgb(var(--clr-rgb-on-surf));
+    }
+
+    &:active {
+        scale: 95%;
+    }
+
+    @media (hover: none) {
+        min-height: 48px;
+        background-color: var(--hover-bg);
+    }
+
+    transform: scale(.95);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.hide_lg_screen {
+    display: flex;
+}
+
+.hide_md_screen {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hide_lg_screen {
+        display: none;
+    }
+
+    .hide_md_screen {
+        display: flex;
+    }
+}
