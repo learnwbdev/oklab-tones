@@ -1,0 +1,49 @@
+.msg_color_copied {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(var(--clr-rgb-surf-cont));
+    color: rgb(var(--clr-rgb-on-surf));
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.5;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  .msg_show {
+    opacity: 0;
+    animation: msg_animation 0.5s ease-in forwards;
+  }
+
+  .msg_hide {
+    opacity: 1;
+    animation: msg_animation_hide 0.5s ease-out forwards;
+  }
+
+  @keyframes msg_animation{
+    0% {
+      opacity: 0;
+      transform: scale(0.5), translate(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1), translate(-50%);
+    }
+  }
+
+  @keyframes msg_animation_hide{
+    0% {
+      opacity: 1;
+      transform: scale(1), translate(-50%);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5), translate(-50%);
+    }
+  }
