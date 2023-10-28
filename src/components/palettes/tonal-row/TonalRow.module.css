@@ -1,0 +1,33 @@
+.tonal_row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    column-gap: 0.25rem;
+    row-gap: 0.25rem;
+    transition-property: width;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+@media screen and (min-width: 768px) {
+  .tonal_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 0.75rem;
+    width: 70%;
+
+
+    /* width: 50%; */
+    /* display: grid;
+    margin: auto;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 0.75rem; */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .tonal_row {
+    width: max(50%, 800px);
+  }
+}
