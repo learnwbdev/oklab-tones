@@ -1,3 +1,4 @@
+import SectionPalettes from "../../layouts/section-palettes";
 import Header from "../../layouts/header";
 
 const HomePage = () => {
@@ -5,6 +6,7 @@ const HomePage = () => {
     <>
       <Header />
       <main>
+        <SectionPalettes />
       </main>
     </>
   );
