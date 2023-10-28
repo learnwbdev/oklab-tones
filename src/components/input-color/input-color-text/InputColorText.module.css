@@ -1,0 +1,16 @@
+.input_color_text {
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.3125em;
+    width: 10ch;
+    border-radius: 5px;
+    color: rgb(var(--clr-rgb-on-secd-cont));
+    caret-color: rgb(var(--clr-rgb-on-secd-cont));
+    background-color: rgba(var(--clr-rgb-secd-cont));
+    outline: none;
+    border: 2px solid rgba(var(--clr-rgb-on-surf-var) / 0.5);
+  }
+
+.input_color_text:focus {
+    border-color: rgb(var(--clr-rgb-secd));
+  }
