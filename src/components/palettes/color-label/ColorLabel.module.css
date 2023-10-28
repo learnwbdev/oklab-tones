@@ -1,0 +1,17 @@
+.color_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(var(--clr-rgb-n-4));
+    cursor: pointer;
+    user-select: none;
+  }
+
+.on_black {
+  color: rgb(var(--clr-rgb-n-98));
+  font-weight: 400;
+}
