@@ -1,0 +1,33 @@
+.input_color_picker_cont {
+  display: flex;
+}
+
+.input_color_picker_cont > label {
+  position: relative;
+}
+
+.input_color_picker_cont label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+}
+
+.input_for_color_picker {
+  pointer-events: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.color_area {
+  border-radius: 999px;
+  width: 4rem;
+  aspect-ratio: 1;
+  box-shadow: 0.125rem 0.125rem 0.3125rem 0.0625rem rgba(var(--clr-shadow-rgb) / 0.8);
+  cursor: pointer;
+}
+
+.color_area__outline {
+  box-shadow: 0 0 0 0.0625rem rgb(var(--clr-rgb-tert)),
+              0 0 0 0.1875rem rgb(var(--clr-rgb-on-surf)),
+              0.20rem 0.20rem 0.5rem 0.3125rem rgba(var(--clr-shadow-rgb) / 0.8);
+}
