@@ -1,0 +1,25 @@
+.btn_go_up {
+  position: fixed;
+  bottom: 2%;
+  right: 4%;
+  background-color: rgb(var(--clr-rgb-prim-cont));
+  box-shadow: 0px 17px 10px -10px rgba(var(--clr-shadow-rgb) / 0.4);
+  z-index: 99;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgb(var(--clr-rgb-prim-cont));
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.icon_arrow_up {
+  stroke-linecap: round;
+  stroke: rgb(var(--clr-rgb-on-prim-cont));
+  fill: inherit;
+  width: 63%;
+  height: 63%;
+}
