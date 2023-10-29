@@ -1,0 +1,29 @@
+.format_row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.625rem;
+    align-items: center;
+    text-align: center;
+}
+
+.format_label{
+    display: flex;
+    min-width: 0.75rem;
+    text-transform: uppercase;
+}
+
+.format_value {
+    display: flex;
+    width: 3.375rem;
+    height: 1.5rem;
+    border: 1px solid rgba(var(--clr-rgb-n-98) / 0.2);
+    background-color: transparent;
+    text-align: center;
+    color: rgb(var(--clr-rgb-n-98));
+    font-size: 0.875rem;
+}
+
+.format_value:focus-visible {
+    outline: rgb(var(--clr-rgb-n-98)) double 1px;
+    border-radius: 5px;
+}
