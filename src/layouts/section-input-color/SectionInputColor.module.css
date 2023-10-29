@@ -1,0 +1,22 @@
+.input_color_cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.input_color_cont > label {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.color_inputs {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+  }
