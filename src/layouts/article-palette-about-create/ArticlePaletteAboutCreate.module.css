@@ -1,0 +1,11 @@
+.color_comp_about {
+    display: grid;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+ }
+
+ .color_comp_about svg {
+    justify-self: center;
+ }
