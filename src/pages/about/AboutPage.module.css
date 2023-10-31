@@ -1,0 +1,73 @@
+.page_about {
+  padding: 5rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4125em;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.page_about > h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.section_palette_about {
+  display: grid;
+  gap: 1.5rem 3rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    'tones'
+    'save'
+    'create';
+  line-height: 1.4125em;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.section_palette_about a:hover {
+  text-decoration: underline;
+}
+
+.section_palette_about article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 45ch;
+  line-height: 1.4125em;
+  font-size: 1.1rem;
+  font-weight: 400;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section_tones {
+  grid-area: tones;
+}
+
+.section_save {
+  grid-area: save;
+}
+
+.section_create {
+  grid-area: create;
+}
+
+@media screen and (min-width: 1024px) {
+  .section_palette_about {
+    display: grid;
+    gap: 1.5rem 3rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      'tones create'
+      'save create';
+  }
+}
