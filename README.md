@@ -22,17 +22,17 @@
 ![Иконка HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
 ![Иконка Express](https://img.shields.io/badge/Express-000?logo=express&logoColor=white&style=for-the-badge)
 
-## 3. Установка и запуск приложения в локальном репозитории
+## 3. Установка и запуск проекта в локальном репозитории
 
-1. `https://github.com/alexpar-wd/oklab-tones.git` - клонировать репозиторий (HTTPS) на локальный компьютер
-
-2. `cd server` - перейти в каталог для API
-3. `pnpm i` или `npm i` - установить зависимости для API
-4. `pnpm start` или `npm start` - запустить API локально
-5. `cd ..` - вернуться в каталог для Frontend части проекта
-6. `pnpm i` или `npm i` - установить зависимости для Frontend
-7. `pnpm dev` или `npm dev` - запустить приложение в режиме разработки
-8. В браузере перейти по ссылке, которую отобразит Vite. Например: `http://localhost:5173/`
+1. `git clone https://github.com/learnwbdev/oklab-tones.git` - клонировать репозиторий (HTTPS) на локальный компьютер
+- *В первом окне для терминала*:
+2. `cd oklab-tones/server` - перейти в каталог проекта для **API**
+3. `pnpm i` или `npm i` - установить зависимости для **API**
+4. `pnpm start` или `npm run start` - запустить **API** локально
+- *Во втором окне для терминала*:
+6. `cd oklab-tones` - перейти в каталог проекта для **Frontend**
+7. `pnpm i` или `npm i` - установить зависимости для **Frontend**
+8. `pnpm dev:open` или `npm run dev:open` - запустить **Vite Dev Server** для просмотра страницы в браузере *(страница автоматически откроется в браузере по умолчанию)*
 
 ## 4. Процесс создания
 
